@@ -5,6 +5,16 @@ that can be required to generate the extra data field of the genesis when we wan
 
 The Docker image is built using multi-stage builds that also improve readibility.
 
+## Commands
+
+> docker pull <>:quorum-tessera-alpine
+
+If you want to build the image locally
+
+> git clone https://github.com/EdsonAlcala/quorum-tessera-alpine
+
+> docker build -t quorum-tessera-alpine .
+
 ## References
 
 https://github.com/jpmorganchase/quorum/wiki/From-Scratch
