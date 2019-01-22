@@ -6,6 +6,8 @@ The Docker image is built using multi-stage builds that also improve readibility
 
 ## Commands
 
+Get the latest version for the docker registry
+
 > docker pull edsonalcala/quorum-tessera-alpine:latest
 
 If you want to build the image locally
