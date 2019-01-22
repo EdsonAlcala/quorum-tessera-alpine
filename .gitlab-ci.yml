@@ -16,4 +16,4 @@ docker build and publish:
     - docker build -t istanbul-tessera-alpine .
     - docker images
     - echo "Pushing to remote repository"
-    - docker push istanbul-tessera-alpine:latest
+    - docker push edsonalcala/istanbul-tessera-alpine:latest
