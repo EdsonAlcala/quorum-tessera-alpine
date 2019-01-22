@@ -20,9 +20,9 @@ Then
 
 You can simply run:
 
-> docker run -it edsonalcala/quorum-tessera-alpine:latest sh <COMMAND> // tessera, geth, bootnode, istanbul 
-
-> docker run --rm edsonalcala/quorum-tessera-alpine:latest
+> docker run -it edsonalcala/quorum-tessera-alpine:latest sh <COMMAND> 
+ 
+And you will have available tessera, geth, bootnode and istanbul commands
 
 If you want to deploy a Quorum network using this image you can check this Quorum implementation for 4 nodes:
 
