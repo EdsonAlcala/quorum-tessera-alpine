@@ -10,10 +10,8 @@ docker build and publish:
     DOCKER_DRIVER: overlay2
     DOCKER_HOST: tcp://docker:2375/
     REPOSITORY_URI: edsonalcala
-  before_script:
-   - docker info
+    PROJECT_NAME: quorum-tessera-alpine
   script:
-    - PROJECT_NAME=$(basename `git rev-parse --show-toplevel`)
     - SHORT_SHA=${CI_COMMIT_SHA:0:8}
     - echo "$SHORT_SHA"
     - echo "$PROJECT_NAME"
