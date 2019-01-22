@@ -3,7 +3,9 @@ FROM alpine:3.7 as quorum-istanbul-builder
 RUN \
     apk add --update go git make gcc musl-dev linux-headers ca-certificates && \
     git clone https://github.com/jpmorganchase/quorum.git && \
-    (cd quorum && make all) && \
+    cd quorum && \
+    git checkout tags/v2.2.1 && \
+    make all && \
     go get github.com/getamis/istanbul-tools/cmd/istanbul
 
 FROM maven:3.5.4-jdk-8 as tessera-builder
