@@ -1,0 +1,17 @@
+stages:
+    - build
+
+docker build and publish:
+  stage: build
+  image: docker:stable
+  services:
+    - docker:dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_HOST: tcp://docker:2375/
+  before_script:
+   - docker info
+  script:
+    - docker build -t istanbul-tessera-alpine .
+    - docker images
+    - echo "Pushing to remote repository"
