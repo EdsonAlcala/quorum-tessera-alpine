@@ -19,3 +19,4 @@ If you want to build the image locally
 
 https://github.com/jpmorganchase/quorum/wiki/From-Scratch
 
+https://docs.docker.com/develop/develop-images/multistage-build/
