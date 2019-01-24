@@ -25,7 +25,7 @@ COPY --from=tessera-builder /tessera/tessera-app/target/*-app.jar /tessera/tesse
 # set tessera alias
 RUN \
     apk add --update bash && rm -rf /var/cache/apk/* && \
-    echo -e '#!/bin/sh \njava -jar /tessera/tessera-app.jar' > /usr/bin/tessera && \
+    echo -e '#!/bin/sh \njava -jar /tessera/tessera-app.jar "$@"' > /usr/bin/tessera && \
     chmod +x /usr/bin/tessera 
 
 CMD ["tessera", "help" ]
