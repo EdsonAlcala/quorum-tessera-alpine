@@ -4,7 +4,7 @@ RUN \
     apk add --update go git make gcc musl-dev linux-headers ca-certificates && \
     git clone https://github.com/jpmorganchase/quorum.git && \
     cd quorum && \
-    git checkout tags/v2.1.1 && \
+    git checkout tags/v2.2.1 && \
     make all && \
     go get github.com/getamis/istanbul-tools/cmd/istanbul
 
